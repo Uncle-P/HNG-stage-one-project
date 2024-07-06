@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Content begins */
+header {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Social icons */
+.fa-icon {
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    line-height: 29px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa-icon.fa-icon-2x {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+  }
+  
+  .fa-icon:hover {
+    color: #0d6efd; /* Primary color for hover effect */
+  }
+  
+/* Card Content 1 */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Card Styles */
+  .card {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0d6efd;
+  }
+
+  .card p {
+    color: #555;
+  }
+  
+  .card .card-block {
+    padding: 2rem;
+  }
+  
+  @media (min-width: 992px) {
+    .card .card-block {
+      padding: 1rem;
+    }
+  }
+  
+  /* Image Responsive */
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  /* Column Styles */
+  .col-md-4 {
+    width: 33.33333%;
+    float: left;
+  }
+  
+  .col-md-8 {
+    width: 66.66667%;
+    float: left;
+  }
+  
+  .col-md-4,
+  .col-md-8 {
+    position: relative;
+    min-height: 1px;
+    padding: 15px;
+  }
+  
+  /* Clearfix for row */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Project-color & Hover */
+.projects {
+    margin-bottom: 1.5rem;
+}
+
+.projects img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .projects h3 a {
+    color: #0d6efd; /* Primary color */
+    text-decoration: none;
+  }
+  
+  .projects h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .projects p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  /* smaller screen */
+  @media (max-width: 992px) {
+    .projects {
+      text-align: center; /* Centers projects on smaller screens */
+    }
+    
+    .projects h3 {
+      font-size: 1rem; /* Increases font size for project titles on smaller screens */
+    }
+  }
+
+  /* Languages */
+  .language h3 {
+    color: #0d6efd; /* Primary color */
+    margin-bottom: 0.5rem;
+  }
+  
+  .language .trans {
+    color: #333;
+  }
+
+  small{
+    -webkit-tap-highlight-color: transparent;
+    font-weight: 400;
+  line-height: 1;
+  }
+ 
+  /* Goals Section */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+main h2 {
+    color: #0d6efd;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-left: 5px solid #0056b3;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea, button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #428ad6;
+}
+
+.center {
+    text-align: center;
+}
+
+/* hr */
+hr {
+    width: 60%;
+    border-radius: 6px;
+    border-color: #0056b3;
+    margin-top: 50px;
+    
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1c1c1c;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  .col-md-4 {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .col-md-8 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-md-4 {
+      width: 50%;
+  }
+}
